@@ -1,0 +1,61 @@
+{
+  "name": "rule-of-thumb",
+  "description": "Zemoga Front End Development - Candidate Test v2.1",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Omar Hernandez",
+    "email": "omarsro@gmail.com",
+    "url": "https://github.com/omarbastos"
+  },
+  "bugs": {
+    "url": "https://github.com/omarbastos/rule-of-thumb/issues",
+    "email": "omarsro@gmail.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "test": "jest",
+    "lint": "eslint src --max-warnings=0"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.3.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "firebase": "^9.6.1",
+    "moment": "^2.29.1",
+    "nanoid": "^3.1.30",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@vitejs/plugin-react": "^1.1.1",
+    "autoprefixer": "^10.4.0",
+    "babel-jest": "^27.4.4",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-tailwindcss": "^1.17.2",
+    "jest": "^27.4.4",
+    "postcss": "^8.4.5",
+    "prettier": "2.5.1",
+    "tailwindcss": "^3.0.1",
+    "typescript": "^4.5.3",
+    "vite": "^2.7.1",
+    "vite-tsconfig-paths": "^3.3.17"
+  }
+}

@@ -1,0 +1,29 @@
+import { query, onSnapshot } from 'firebase/firestore'
+import { pollsCol } from 'lib/firebase'
+import { useState, useEffect } from 'react'
+import { Poll } from 'utils/interfaces'
+
+const useGetPolls = () => {
+  const [polls, setPolls] = useState([] as Poll[])
+  const fetchPolls = async () => {
+    const q = query(pollsCol)
+    onSnapshot(q, (querySnapshot) => {
+      const newPolls: Poll[] = []
+      querySnapshot.forEach((doc) => {
+        const poll: Poll = doc.data()
+        newPolls.push({ ...poll, uid: doc.id })
+      })
+      setPolls(newPolls)
+    })
+  }
+
+  useEffect(() => {
+    fetchPolls()
+    return () => {
+      setPolls([]) // This worked for me
+    }
+  }, [pollsCol])
+  return { polls }
+}
+
+export default useGetPolls
