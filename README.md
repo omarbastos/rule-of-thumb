@@ -1,6 +1,9 @@
-# React Tailwindcss Boilerplate build with Vite
+# Rule of Thumb
 
-This is a [ReactJS](https://reactjs.org) + [Vite](https://vitejs.dev) boilerplate to be used with [Tailwindcss](https://tailwindcss.com).
+This is a small VITE+REACT+FIREBASE+TAILWIND APP for simple polls and realtime results
+
+![Last Worflow](https://github.com/omarbastos/rule-of-thumn/actions/workflows/deploy/badge.svg)
+
 
 ## What is inside?
 

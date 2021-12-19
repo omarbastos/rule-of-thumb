@@ -8,7 +8,6 @@ import { useEffect } from 'react'
 const Home = React.lazy(() => import('./pages/Home'))
 
 export default function App() {
-  useEffect(() => {}, [])
   return (
     <BrowserRouter>
       <Routes>
