@@ -53,7 +53,7 @@ const CardSquare = ({
 
   return (
     <div
-      className={`flex-shrink-0 mr-3 md:mr-0 w-[300px] h-[300px] md:w-full  md:h-[351px] lg:h-80 lg:w-80 self-center relative `}
+      className={`flex-shrink-0 mr-3 md:mr-0 w-[300px] h-[300px] md:w-full md:h-[351px] 2xl:h-80 2xl:w-80 self-center relative `}
     >
       <img className="object-cover w-full h-full" src={picture} alt={name} />
 

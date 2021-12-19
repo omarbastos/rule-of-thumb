@@ -1,7 +1,7 @@
 import MainFooter from 'layouts/MainFooter'
 import MainNavbar from 'layouts/MainNavbar'
 import * as React from 'react'
-import { Routes, Route, Link, Outlet } from 'react-router-dom'
+import { Routes, Route, Link, Outlet, BrowserRouter } from 'react-router-dom'
 
 import { useEffect } from 'react'
 
@@ -10,7 +10,7 @@ const Home = React.lazy(() => import('./pages/Home'))
 export default function App() {
   useEffect(() => {}, [])
   return (
-    <>
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"
@@ -37,7 +37,7 @@ export default function App() {
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
-    </>
+    </BrowserRouter>
   )
 }
 

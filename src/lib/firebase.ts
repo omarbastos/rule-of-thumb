@@ -8,12 +8,12 @@ import {
 } from 'firebase/firestore'
 
 export const firebaseApp = initializeApp({
-  apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTHDOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECTID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGEBUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGINGSENDERID,
-  appId: import.meta.env.VITE_FIREBASE_APPID
+  apiKey: process.env.VITE_FIREBASE_APIKEY,
+  authDomain: process.env.VITE_FIREBASE_AUTHDOMAIN,
+  projectId: process.env.VITE_FIREBASE_PROJECTID,
+  storageBucket: process.env.VITE_FIREBASE_STORAGEBUCKET,
+  messagingSenderId: process.env.VITE_FIREBASE_MESSAGINGSENDERID,
+  appId: process.env.VITE_FIREBASE_APPID
 })
 export const firestore = getFirestore()
 

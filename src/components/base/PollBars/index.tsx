@@ -1,4 +1,3 @@
-import React from 'react'
 import useWindowDimensions from 'utils/hooks/useWindowDimensions'
 import ThumbsDownIcon from '../icons/ThumbsDownIcon'
 import ThumbsUpIcon from '../icons/ThumbsUpIcon'

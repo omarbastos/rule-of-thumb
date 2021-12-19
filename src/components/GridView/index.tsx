@@ -1,5 +1,5 @@
 import CardSquare from 'components/base/Cards/Square'
-import React from 'react'
+import { nanoid } from 'nanoid'
 import { Poll } from 'utils/interfaces'
 
 interface Props {
@@ -12,7 +12,10 @@ const GridView = ({ polls }: Props) => {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {[...Array(SKELETONS)].map(() => (
-          <div className="w-60 h-24 border-2 rounded-md mx-auto my-2">
+          <div
+            key={nanoid()}
+            className="w-60 h-24 border-2 rounded-md mx-auto my-2"
+          >
             <div className="flex animate-pulse flex-row items-center h-full justify-center space-x-5">
               <div className="w-12 bg-gray-300 h-12 rounded-full "></div>
               <div className="flex flex-col space-y-3">

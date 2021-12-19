@@ -1,4 +1,3 @@
-import React from 'react'
 import stg from 'utils/strings'
 import people750 from '../../assets/img/bg-people.png'
 import people1440 from '../../assets/img/bg-people.@2x.png'

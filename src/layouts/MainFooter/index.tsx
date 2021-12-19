@@ -1,4 +1,3 @@
-import React from 'react'
 import stg from 'utils/strings'
 
 interface Props {}

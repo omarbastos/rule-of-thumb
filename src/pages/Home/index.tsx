@@ -1,16 +1,16 @@
-import HeaderHero from '../layouts/HeroHeader/HeroHeader'
-import BannerTop from '../components/BannerTop/index'
-import BannerBottom from '../components/BannerBottom/index'
+import HeaderHero from '../../layouts/HeroHeader/HeroHeader'
+import BannerTop from '../../components/BannerTop/index'
+import BannerBottom from '../../components/BannerBottom/index'
 
 import { Poll } from 'utils/interfaces'
 import useGetPolls from 'utils/hooks/useGetPolls'
 import CardSquare from 'components/base/Cards/Square'
 import GridView from 'components/GridView'
 import DropdownMenu from 'components/DropdownMenu'
-import { VIEWS } from '../utils/constants'
+import { VIEWS } from '../../utils/constants'
 import { useEffect, useState } from 'react'
 import stg from 'utils/strings'
-import useWindowDimensions from '../utils/hooks/useWindowDimensions'
+import useWindowDimensions from '../../utils/hooks/useWindowDimensions'
 import ListView from 'components/ListView'
 
 interface Props {}

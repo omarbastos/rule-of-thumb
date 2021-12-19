@@ -1,4 +1,3 @@
-import React from 'react'
 import stg from 'utils/strings'
 import SearchIcon from '../../assets/img/search.svg'
 interface Props {}
@@ -28,7 +27,7 @@ const MainNavbar = (props: Props) => {
             <a href="#">{stg('login_signup')}</a>
           </li>
           <li>
-            <form action="javascript:void(0)">
+            <form>
               <input
                 className="nav__search-input"
                 aria-label="search"
