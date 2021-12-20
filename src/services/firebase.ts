@@ -8,12 +8,13 @@ import {
 } from 'firebase/firestore'
 
 export const firebaseApp = initializeApp({
-  apiKey: process.env.VITE_FIREBASE_APIKEY,
-  authDomain: process.env.VITE_FIREBASE_AUTHDOMAIN,
-  projectId: process.env.VITE_FIREBASE_PROJECTID,
-  storageBucket: process.env.VITE_FIREBASE_STORAGEBUCKET,
-  messagingSenderId: process.env.VITE_FIREBASE_MESSAGINGSENDERID,
-  appId: process.env.VITE_FIREBASE_APPID
+  apiKey: 'AIzaSyAhd3yDebdcvAuL5jDbc0WE5idh5MdHi3k',
+  authDomain: 'rule-of-thumb-oh.firebaseapp.com',
+  projectId: 'rule-of-thumb-oh',
+  storageBucket: 'rule-of-thumb-oh.appspot.com',
+  messagingSenderId: '471986831031',
+  appId: '1:471986831031:web:93ffab62ce1740ebf71732',
+  measurementId: 'G-8E3PMDBGS0'
 })
 export const firestore = getFirestore()
 
