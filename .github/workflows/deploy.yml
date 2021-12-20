@@ -30,5 +30,10 @@ jobs:
         uses: foo-software/lighthouse-check-action@master
         with:
           urls: 'https://rule-of-thumb-oh.web.app/'
-
+      - name: CodeCoverage
+        uses: codecov/codecov-action@v2
+        with:
+          name: codecov-umbrella # optional
+          fail_ci_if_error: true # optional (default = false)
+          verbose: true # optional (default = false)
 
