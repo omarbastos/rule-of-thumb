@@ -1,5 +1,5 @@
 
-![Deployment Status](https://github.com/omarbastos/rule-of-thumb/actions/workflows/deploy.yml/badge.svg)
+[![Deployment Status](https://github.com/omarbastos/rule-of-thumb/actions/workflows/deploy.yml/badge.svg)](https://github.com/omarbastos/rule-of-thumb/actions/workflows/deploy.yml)
 [![codecov](https://codecov.io/gh/omarbastos/rule-of-thumb/branch/master/graph/badge.svg?token=4QAYO63GCK)](https://codecov.io/gh/omarbastos/rule-of-thumb)
 # Rule of Thumb
 
