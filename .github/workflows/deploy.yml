@@ -28,7 +28,7 @@ jobs:
           VITE_FIREBASE_MEASUREMENTID: ${{ secrets.VITE_FIREBASE_MEASUREMENTID }}
       - name: Lighthouse
         uses: foo-software/lighthouse-check-action@master
-           with:
+        with:
           urls: 'https://rule-of-thumb-oh.web.app/'
       - name: Verify Lighthouse Check results
         uses: foo-software/lighthouse-check-status-action@master
