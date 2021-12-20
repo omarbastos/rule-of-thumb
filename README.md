@@ -67,3 +67,16 @@ npm run test
 ## License
 
 This project is licensed under the MIT License.
+
+## Firebase
+
+Please add to .env.local the following params
+```
+VITE_FIREBASE_APIKEY=
+VITE_FIREBASE_AUTHDOMAIN=
+VITE_FIREBASE_PROJECTID=
+VITE_FIREBASE_STORAGEBUCKET=
+VITE_FIREBASE_MESSAGINGSENDERID=
+VITE_FIREBASE_APPID=
+VITE_FIREBASE_MEASUREMENTID=
+```
