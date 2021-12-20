@@ -1,5 +1,5 @@
 import { query, onSnapshot } from 'firebase/firestore'
-import { pollsCol } from 'lib/firebase'
+import { pollsCol } from 'services/firebase'
 import { useState, useEffect } from 'react'
 import { Poll } from 'utils/interfaces'
 
