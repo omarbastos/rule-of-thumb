@@ -25,7 +25,7 @@ const PollBars = ({ upVotes, downVotes, square, name }: Props) => {
         aria-valuenow={upVotes}
         aria-valuemin={0}
         aria-valuemax={100}
-        aria-labelledby={`${name} Up Votes`}
+        aria-label={`${name} Up Votes`}
         aria-progressbar-name={`${name} Up Votes`}
       >
         <div className="flex items-center px-4">
@@ -44,7 +44,7 @@ const PollBars = ({ upVotes, downVotes, square, name }: Props) => {
         aria-valuenow={downVotes}
         aria-valuemin={0}
         aria-valuemax={100}
-        aria-labelledby={`${name} Down Votes`}
+        aria-label={`${name} Down Votes`}
         aria-progressbar-name={`${name} Down Votes`}
         className="shadow-none flex justify-end items-center whitespace-nowrap text-white bg-thumb-down/60"
       >
