@@ -1,6 +1,6 @@
 
 ![Deployment Status](https://github.com/omarbastos/rule-of-thumb/actions/workflows/deploy.yml/badge.svg)
-
+[![codecov](https://codecov.io/gh/omarbastos/rule-of-thumb/branch/master/graph/badge.svg?token=4QAYO63GCK)](https://codecov.io/gh/omarbastos/rule-of-thumb)
 # Rule of Thumb
 
 Rule of Thumb™️ tracks the sentiment of their users on trending and controversial people from different fields, including politics, business, media and entertainment, etc
