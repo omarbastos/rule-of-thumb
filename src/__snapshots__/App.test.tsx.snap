@@ -92,6 +92,7 @@ exports[`<App /> should render App as default 1`] = `
         <ul>
           <li>
             <a
+              aria-label="Terms and Conditions"
               href="#"
             >
               Terms and Conditions
@@ -99,6 +100,7 @@ exports[`<App /> should render App as default 1`] = `
           </li>
           <li>
             <a
+              aria-label="Privacy Policy"
               href="#"
             >
               Privacy Policy
@@ -106,6 +108,7 @@ exports[`<App /> should render App as default 1`] = `
           </li>
           <li>
             <a
+              aria-label="Contact Us"
               href="#"
             >
               Contact Us
@@ -122,6 +125,7 @@ exports[`<App /> should render App as default 1`] = `
         <ul>
           <li>
             <a
+              aria-label="facebook"
               href="#"
             >
               <svg
@@ -139,6 +143,7 @@ exports[`<App /> should render App as default 1`] = `
           </li>
           <li>
             <a
+              aria-label="twitter"
               href="#"
             >
               <svg

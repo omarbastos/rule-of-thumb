@@ -22,5 +22,4 @@ const createCollection = <T = DocumentData>(collectionName: string) => {
   return collection(firestore, collectionName) as CollectionReference<T>
 }
 
-// export all your collections
 export const pollsCol = createCollection<Poll>('polls')

@@ -1,7 +1,7 @@
 import { Timestamp } from '@firebase/firestore'
 import { render, screen } from '@testing-library/react'
 
-import GridView from '.'
+import ListView from '.'
 
 const polls = [
   {
@@ -20,15 +20,15 @@ const polls = [
   }
 ]
 
-describe('<GridView />', () => {
-  it('should render GridView as default', () => {
-    const { container } = render(<GridView polls={[]} />)
+describe('<ListView />', () => {
+  it('should render ListView as default', () => {
+    const { container } = render(<ListView polls={[]} />)
 
     expect(container).toMatchSnapshot()
   })
 
-  it('should render GridView with data', () => {
-    const { container } = render(<GridView polls={polls} />)
+  it('should render ListView with data', () => {
+    const { container } = render(<ListView polls={polls} />)
 
     expect(container).toMatchSnapshot()
   })

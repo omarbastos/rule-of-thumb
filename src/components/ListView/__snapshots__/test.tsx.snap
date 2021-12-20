@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<GridView /> should render GridView as default 1`] = `
+exports[`<ListView /> should render ListView as default 1`] = `
 <div>
   <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+    class="grid grid-cols-1"
   >
     <div
       class="w-60 h-24 border-2 rounded-md mx-auto my-2"
@@ -345,32 +345,107 @@ exports[`<GridView /> should render GridView as default 1`] = `
 </div>
 `;
 
-exports[`<GridView /> should render GridView with data 1`] = `
+exports[`<ListView /> should render ListView with data 1`] = `
 <div>
   <div
-    class="flex overflow-x-scroll no-scrollbar md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 justify-items-center items-center md:justify-center"
+    class="flex flex-col items-center justify-center"
   >
     <div
-      class="flex-shrink-0 mr-3 md:mr-0 w-[300px] h-[300px] md:w-full md:h-[351px] 2xl:h-80 2xl:w-80 self-center relative "
+      class="w-full my-4 h-72 md:h-40 relative "
     >
       <img
         alt="Greta Thumberg"
-        class="object-cover w-full h-full"
+        class="object-fill  w-full md:w-[18%] h-72 md:h-40"
         src="https://firebasestorage.googleapis.com/v0/b/rule-of-thumb-oh.appspot.com/o/greta.png?alt=media&token=0475699c-f335-4572-8573-254854cd765a"
       />
       <div
-        class="absolute flex w-full left-0 top-[36%]"
+        class="absolute left-0 top-0 w-full h-full flex md:bg-gradient-gray"
+      >
+        <div
+          class="w-1/4 h-40"
+        />
+        <div
+          class="p-2 flex w-1/2 space-y-2 flex-col items-start justify-start mt-4 lg:mt-0"
+        >
+          <h4
+            class="text-xl truncate flex-none lg:text-3xl  font-normal text-white"
+          >
+            Greta Thumberg
+          </h4>
+          <p
+            class="text-sm line-clamp-2 w-full lg:text-base text-white"
+          >
+            Thunberg's activism started after convincing her parents to adopt several lifestyle choices to reduce their own carbon footprint.
+          </p>
+        </div>
+        <div
+          class="flex flex-none w-1/4 mb-4 p-4 justify-end items-center"
+        >
+          <button
+            aria-label="Thumbs Up"
+            class="square p-1.5 object-center bg-thumb-up hover:bg-thumb-up-200 lg:h-10 lg:px-4 "
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 16 16"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M3.39556 7.10739C5.33333 4.40864 6.02086 3.63942 5.90612 2.07721C5.79138 0.515007 6.1196 0.085454 6.90037 0.00853218C7.68115 -0.0683897 9.14717 0.334371 9.40453 2.89138C9.51561 3.99767 8.68044 6.17569 8.68044 6.17569L14.5244 6.17871C15.3518 6.17871 16 6.51363 16 7.58103C16 8.58101 14.8311 8.88179 14.8311 8.88179C15.2946 9.07914 15.5889 9.51885 15.579 9.99931C15.5818 10.6772 15.0051 11.2301 14.288 11.237C14.7786 11.4233 15.0587 11.9138 14.9545 12.4038C14.8656 12.991 14.3849 13.4563 13.766 13.5541C14.1713 13.8252 14.3388 14.3165 14.1774 14.7603C13.915 15.3463 13.2225 15.9923 11.6669 15.9923L4.39987 15.9923C3.96738 16.0441 3.54771 15.831 3.35442 15.4616L3.35442 7.43409C3.35141 7.32389 3.36526 7.21385 3.39556 7.10739ZM-1.15248e-06 6.59141L2.84289 6.59141L2.84289 15.9906L-2.79588e-06 15.9906L-1.15248e-06 6.59141Z"
+                fill="white"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Thumbs Down"
+            class="square p-1.5 object-center bg-thumb-down hover:bg-thumb-down-200 lg:h-10 lg:px-4 mx-2 "
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 16 16"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M12.6044 8.89261C10.6667 11.5914 9.97914 12.3606 10.0939 13.9228C10.2086 15.485 9.8804 15.9145 9.09963 15.9915C8.31885 16.0684 6.85283 15.6656 6.59547 13.1086C6.48439 12.0023 7.31956 9.82432 7.31956 9.82432L1.47561 9.82129C0.64821 9.82129 0 9.48638 0 8.41898C0 7.41899 1.16888 7.11822 1.16888 7.11822C0.705391 6.92086 0.411133 6.48115 0.421017 6.00069C0.418215 5.32278 0.994884 4.76991 1.71195 4.76302C1.22145 4.57668 0.941252 4.08616 1.04546 3.59623C1.1344 3.00902 1.61511 2.54375 2.23399 2.44586C1.82873 2.17481 1.66115 1.68354 1.82258 1.23974C2.08497 0.653748 2.77752 0.00768948 4.33313 0.00768948L11.6001 0.00768948C12.0326 -0.0440559 12.4523 0.168969 12.6456 0.538364L12.6456 8.56591C12.6486 8.67611 12.6347 8.78615 12.6044 8.89261ZM16 9.40859H13.1571L13.1571 0.00941753H16L16 9.40859Z"
+                fill="white"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Vote Now"
+            class="justify-self-end xl:w-28 bg-black text-base py-1.5 lg:py-2 px-4 whitespace-nowrap text-white border-solid border-2 border-white"
+            disabled=""
+          >
+            Vote Now
+          </button>
+        </div>
+      </div>
+      <div
+        class="absolute font-bold top-2 right-4 text-sm text-white"
+      >
+        9 hours ago in environment
+      </div>
+      <div
+        class="absolute top-0 left-0"
       >
         <button
           aria-label="Thumbs Up"
-          class="square p-1.5 object-center bg-thumb-up false h-8 px-2"
+          class="square p-1.5 object-center bg-thumb-up false h-10 px-4"
           disabled=""
         >
           <svg
             fill="none"
-            height="16"
+            height="24"
             viewBox="0 0 16 16"
-            width="16"
+            width="24"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -381,77 +456,9 @@ exports[`<GridView /> should render GridView with data 1`] = `
             />
           </svg>
         </button>
-        <div
-          class="px-4 -mt-1 flex space-y-2 flex-col items-start justify-start"
-        >
-          <h4
-            class="text-2xl md:text-4xl lg:text-2xl font-normal flex-none text-white line-clamp-1 "
-          >
-            Greta Thumberg
-          </h4>
-          <p
-            class="text-sm md:text-base font-light lg:text-sm line-clamp-2 w-11/12  text-white"
-          >
-            Thunberg's activism started after convincing her parents to adopt several lifestyle choices to reduce their own carbon footprint.
-          </p>
-          <div
-            class="w-full text-right font-bold text-xs md:text-sm text-white"
-          >
-            9 hours ago in environment
-          </div>
-          <div
-            class="self-end flex justify-center items-center"
-          >
-            <button
-              aria-label="Thumbs Up"
-              class="square p-1.5 object-center bg-thumb-up hover:bg-thumb-up-200 lg:p-1.5 "
-            >
-              <svg
-                fill="none"
-                height="16"
-                viewBox="0 0 16 16"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M3.39556 7.10739C5.33333 4.40864 6.02086 3.63942 5.90612 2.07721C5.79138 0.515007 6.1196 0.085454 6.90037 0.00853218C7.68115 -0.0683897 9.14717 0.334371 9.40453 2.89138C9.51561 3.99767 8.68044 6.17569 8.68044 6.17569L14.5244 6.17871C15.3518 6.17871 16 6.51363 16 7.58103C16 8.58101 14.8311 8.88179 14.8311 8.88179C15.2946 9.07914 15.5889 9.51885 15.579 9.99931C15.5818 10.6772 15.0051 11.2301 14.288 11.237C14.7786 11.4233 15.0587 11.9138 14.9545 12.4038C14.8656 12.991 14.3849 13.4563 13.766 13.5541C14.1713 13.8252 14.3388 14.3165 14.1774 14.7603C13.915 15.3463 13.2225 15.9923 11.6669 15.9923L4.39987 15.9923C3.96738 16.0441 3.54771 15.831 3.35442 15.4616L3.35442 7.43409C3.35141 7.32389 3.36526 7.21385 3.39556 7.10739ZM-1.15248e-06 6.59141L2.84289 6.59141L2.84289 15.9906L-2.79588e-06 15.9906L-1.15248e-06 6.59141Z"
-                  fill="white"
-                  fill-rule="evenodd"
-                />
-              </svg>
-            </button>
-            <button
-              aria-label="Thumbs Down"
-              class="square p-1.5 object-center bg-thumb-down hover:bg-thumb-down-200 p-1.5 mx-2 "
-            >
-              <svg
-                fill="none"
-                height="16"
-                viewBox="0 0 16 16"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M12.6044 8.89261C10.6667 11.5914 9.97914 12.3606 10.0939 13.9228C10.2086 15.485 9.8804 15.9145 9.09963 15.9915C8.31885 16.0684 6.85283 15.6656 6.59547 13.1086C6.48439 12.0023 7.31956 9.82432 7.31956 9.82432L1.47561 9.82129C0.64821 9.82129 0 9.48638 0 8.41898C0 7.41899 1.16888 7.11822 1.16888 7.11822C0.705391 6.92086 0.411133 6.48115 0.421017 6.00069C0.418215 5.32278 0.994884 4.76991 1.71195 4.76302C1.22145 4.57668 0.941252 4.08616 1.04546 3.59623C1.1344 3.00902 1.61511 2.54375 2.23399 2.44586C1.82873 2.17481 1.66115 1.68354 1.82258 1.23974C2.08497 0.653748 2.77752 0.00768948 4.33313 0.00768948L11.6001 0.00768948C12.0326 -0.0440559 12.4523 0.168969 12.6456 0.538364L12.6456 8.56591C12.6486 8.67611 12.6347 8.78615 12.6044 8.89261ZM16 9.40859H13.1571L13.1571 0.00941753H16L16 9.40859Z"
-                  fill="white"
-                  fill-rule="evenodd"
-                />
-              </svg>
-            </button>
-            <button
-              aria-label="Vote now"
-              class="xl:w-28 px-4 py-1 bg-black-transparency text-base whitespace-nowrap text-white border-solid border-2 border-white"
-              disabled=""
-            >
-              Vote Now
-            </button>
-          </div>
-        </div>
       </div>
       <div
-        class="absolute bottom-0 overflow-hidden w-full h-8 text-xs flex"
+        class="absolute bottom-0 overflow-hidden w-full h-10 text-xs flex"
       >
         <div
           aria-label="Greta Thumberg Up Votes"
@@ -512,7 +519,7 @@ exports[`<GridView /> should render GridView with data 1`] = `
               </g>
             </svg>
             <span
-              class="ml-2 text-base false"
+              class="ml-2 text-base 2xl:text-2xl"
             >
               63.99
               %
@@ -532,7 +539,7 @@ exports[`<GridView /> should render GridView with data 1`] = `
             class="flex items-center px-4"
           >
             <span
-              class="mr-2 text-base false"
+              class="mr-2 text-base 2xl:text-2xl"
             >
               36.01
               %

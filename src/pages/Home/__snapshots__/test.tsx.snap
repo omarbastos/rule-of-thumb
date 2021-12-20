@@ -191,7 +191,9 @@ exports[`<Home /> should render Home as default 1`] = `
           class="relative flex-none"
         >
           <button
+            aria-label="View"
             class="w-40 bg-white text-sm py-2 px-4 whitespace-nowrap text-black border-solid border-2 border-black font-normal flex justify-center items-center"
+            data-testid="button-dropdow-menu"
             type="button"
           >
             <span
@@ -585,6 +587,7 @@ exports[`<Home /> should render Home as default 1`] = `
         class="banner__right"
       >
         <button
+          aria-label="Submit a name"
           class="text-base text-center border border-b-2 border-black p-2 my-2 w-full"
         >
           Submit a name
@@ -1150,6 +1153,7 @@ exports[`<Home /> should render the Home as mobile 1`] = `
         class="banner__right"
       >
         <button
+          aria-label="Submit a name"
           class="text-base text-center border border-b-2 border-black p-2 my-2 w-full"
         >
           Submit a name

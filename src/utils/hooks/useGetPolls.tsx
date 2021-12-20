@@ -20,7 +20,7 @@ const useGetPolls = () => {
   useEffect(() => {
     fetchPolls()
     return () => {
-      setPolls([]) // This worked for me
+      setPolls([])
     }
   }, [pollsCol])
   return { polls }

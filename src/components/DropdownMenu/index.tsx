@@ -30,6 +30,7 @@ const DropdownMenu = ({ setSelected, selected }: Props) => {
         onClick={() => setIsVisible(!isVisible)}
         className="w-40 bg-white text-sm py-2 px-4 whitespace-nowrap text-black border-solid border-2 border-black font-normal flex justify-center items-center"
         type="button"
+        data-testid="button-dropdow-menu"
       >
         <span className="flex-auto"> {selected}</span>
         <svg
@@ -54,6 +55,7 @@ const DropdownMenu = ({ setSelected, selected }: Props) => {
             {itemsMenu.map((item) => {
               return (
                 <li
+                  data-testid={`dropdown-option-${item.id}`}
                   className="border-solid border-b-2 border-l-2 border-r-2 border-black py-2 px-4 flex justify-center items-center"
                   onClick={() => handleSelected(item.title)}
                   key={item.id}
