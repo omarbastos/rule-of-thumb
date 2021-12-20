@@ -25,7 +25,10 @@ const BannerBottom = (props: Props) => {
         </h2>
       </div>
       <div className="banner__right">
-        <button className="text-base text-center border border-b-2 border-black p-2 my-2 w-full">
+        <button
+          aria-label="Submit a name"
+          className="text-base text-center border border-b-2 border-black p-2 my-2 w-full"
+        >
           {stg('submit_a_name')}
         </button>
       </div>

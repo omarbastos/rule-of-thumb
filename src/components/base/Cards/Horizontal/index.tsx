@@ -109,6 +109,7 @@ const CardHorizontal = ({
           <button
             disabled={currentVote === null && !isVoted}
             onClick={updateVote}
+            aria-label="Vote Now"
             className="justify-self-end xl:w-28 bg-black text-base py-1.5 lg:py-2 px-4 whitespace-nowrap text-white border-solid border-2 border-white"
           >
             {isVoted ? stg('vote_again') : stg('vote_now')}
@@ -137,7 +138,7 @@ const CardHorizontal = ({
           />
         )}
       </div>
-      <PollBars upVotes={positive} downVotes={negative}></PollBars>
+      <PollBars name={name} upVotes={positive} downVotes={negative}></PollBars>
     </div>
   )
 }

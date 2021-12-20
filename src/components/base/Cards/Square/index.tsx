@@ -116,6 +116,7 @@ const CardSquare = ({
             <button
               disabled={currentVote === null && !isVoted}
               onClick={updateVote}
+              aria-label="Vote now"
               className="xl:w-28 px-4 py-1 bg-black-transparency text-base whitespace-nowrap text-white border-solid border-2 border-white"
             >
               {isVoted ? stg('vote_again') : stg('vote_now')}
@@ -123,7 +124,12 @@ const CardSquare = ({
           </div>
         </div>
       </div>
-      <PollBars square upVotes={positive} downVotes={negative}></PollBars>
+      <PollBars
+        name={name}
+        square
+        upVotes={positive}
+        downVotes={negative}
+      ></PollBars>
     </div>
   )
 }

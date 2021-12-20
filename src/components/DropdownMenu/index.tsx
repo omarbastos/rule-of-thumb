@@ -26,6 +26,7 @@ const DropdownMenu = ({ setSelected, selected }: Props) => {
   return (
     <div className="relative flex-none" ref={ref}>
       <button
+        aria-label="View"
         onClick={() => setIsVisible(!isVisible)}
         className="w-40 bg-white text-sm py-2 px-4 whitespace-nowrap text-black border-solid border-2 border-black font-normal flex justify-center items-center"
         type="button"

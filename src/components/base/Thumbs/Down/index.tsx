@@ -16,6 +16,7 @@ const ThumbsDown = ({
   return (
     <button
       onClick={onClick}
+      aria-label="Thumbs Down"
       disabled={disabled}
       className={`square p-1.5 object-center bg-thumb-down ${
         !disabled && 'hover:bg-thumb-down-200'

@@ -5,10 +5,11 @@ import ThumbsUpIcon from '../icons/ThumbsUpIcon'
 interface Props {
   upVotes: number
   downVotes: number
+  name: string
   square?: boolean
 }
 
-const PollBars = ({ upVotes, downVotes, square }: Props) => {
+const PollBars = ({ upVotes, downVotes, square, name }: Props) => {
   const { isTablet } = useWindowDimensions()
 
   return (
@@ -21,6 +22,7 @@ const PollBars = ({ upVotes, downVotes, square }: Props) => {
         style={{ width: `${upVotes}%`, transition: 'width 2s' }}
         className="shadow-none flex justify-start items-center whitespace-nowrap text-white bg-thumb-up"
         role="progressbar"
+        aria-progressbar-name={`${name}-up-votes`}
       >
         <div className="flex items-center px-4">
           <ThumbsUpIcon
@@ -35,6 +37,7 @@ const PollBars = ({ upVotes, downVotes, square }: Props) => {
       <div
         style={{ width: `${downVotes}%`, transition: 'width 2s' }}
         role="progressbar"
+        aria-progressbar-name={`${name}-down-votes`}
         className="shadow-none flex justify-end items-center whitespace-nowrap text-white bg-thumb-down/60"
       >
         <div className="flex items-center px-4">
