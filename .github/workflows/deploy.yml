@@ -30,13 +30,5 @@ jobs:
         uses: foo-software/lighthouse-check-action@master
         with:
           urls: 'https://rule-of-thumb-oh.web.app/'
-      - name: Verify Lighthouse Check results
-        uses: foo-software/lighthouse-check-status-action@master
-        with:
-          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
-          minAccessibilityScore: "90"
-          minBestPracticesScore: "80"
-          minPerformanceScore: "80"
-          minProgressiveWebAppScore: "30"
-          minSeoScore: "80"
-        
+
+
