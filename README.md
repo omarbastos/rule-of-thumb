@@ -1,11 +1,12 @@
+
+![Deployment Status](https://github.com/omarbastos/rule-of-thumb/actions/workflows/deploy.yml/badge.svg)
+
 # Rule of Thumb
 
-This is a small VITE+REACT+FIREBASE+TAILWIND APP for simple polls and realtime results
-
-![Last Worflow](https://github.com/omarbastos/rule-of-thumb/actions/workflows/deploy.yml/badge.svg)
+Rule of Thumb™️ tracks the sentiment of their users on trending and controversial people from different fields, including politics, business, media and entertainment, etc
 
 
-## What is inside?
+## What is the Stack?
 
 This project uses many tools like:
 
@@ -17,6 +18,7 @@ This project uses many tools like:
 - [Tailwindcss](https://tailwindcss.com)
 - [Eslint](https://eslint.org)
 - [Prettier](https://prettier.io)
+- [Firebase](https://firebase.google.com)
 
 ## Getting Started
 
