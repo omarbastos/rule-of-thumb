@@ -22,7 +22,11 @@ const PollBars = ({ upVotes, downVotes, square, name }: Props) => {
         style={{ width: `${upVotes}%`, transition: 'width 2s' }}
         className="shadow-none flex justify-start items-center whitespace-nowrap text-white bg-thumb-up"
         role="progressbar"
-        aria-progressbar-name={`${name}-up-votes`}
+        aria-valuenow={upVotes}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-labelledby="progressbar-label"
+        aria-progressbar-name={`${name} Up Votes`}
       >
         <div className="flex items-center px-4">
           <ThumbsUpIcon
@@ -37,7 +41,11 @@ const PollBars = ({ upVotes, downVotes, square, name }: Props) => {
       <div
         style={{ width: `${downVotes}%`, transition: 'width 2s' }}
         role="progressbar"
-        aria-progressbar-name={`${name}-down-votes`}
+        aria-valuenow={downVotes}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-labelledby="progressbar-label"
+        aria-progressbar-name={`${name} Down Votes`}
         className="shadow-none flex justify-end items-center whitespace-nowrap text-white bg-thumb-down/60"
       >
         <div className="flex items-center px-4">
