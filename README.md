@@ -22,16 +22,10 @@ This project uses many tools like:
 
 ### Install
 
-Create the project.
-
-```bash
-npx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
-```
-
 Access the project directory.
 
 ```bash
-cd my-app
+cd rule-of-thumb
 ```
 
 Install dependencies.
@@ -40,7 +34,7 @@ Install dependencies.
 npm install
 ```
 
-Serve with hot reload at http://localhost:3000.
+Serve with hot reload at http://localhost:8001.
 
 ```bash
 npm run dev
