@@ -2,7 +2,7 @@
 
 This is a small VITE+REACT+FIREBASE+TAILWIND APP for simple polls and realtime results
 
-![Last Worflow](https://github.com/omarbastos/rule-of-thumn/actions/workflows/deploy/badge.svg)
+![Last Worflow](https://github.com/omarbastos/rule-of-thumn/actions/workflows/DEPLOY/badge.svg)
 
 
 ## What is inside?
